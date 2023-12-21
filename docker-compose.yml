@@ -1,0 +1,12 @@
+services:
+  csv:
+    build:
+      context: .
+      dockerfile: Dockerfile.dev
+    ports:
+      - "8501:8501"
+    volumes:
+      - "csv_vol:/app"
+volumes:
+  csv_vol:
+    external: true

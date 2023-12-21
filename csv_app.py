@@ -2,6 +2,7 @@ import streamlit as st
 import pandas as pd
 
 st.title("CSV File Uploader")
+st.write("### By Gargeya Sharma")
 
 uploaded_file = st.file_uploader("Choose a CSV file", type="csv")
 
